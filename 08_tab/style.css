@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #666;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  text-align: center;
+  color: #ddd;
+  margin: 4rem 0;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tab li {
+  margin: 0 4px;
+}
+
+.tab a {
+  display: block;
+  padding: 6px 20px;
+  background: #eee;
+}
+
+.tab a.active {
+  background: #111;
+  color: #fff;
+}
+
+.content {
+  height: 400px;
+}
+
+.content img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}

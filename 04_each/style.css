@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  background: #666;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #eee;
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.card {
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.card_photo {
+  position: relative;
+}
+
+.card_info {
+  padding: 10px 16px 20px;
+}
+
+.sns {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 12px;
+  right: 12px;
+}
+
+.sns span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.sns span.share {
+  background: green;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+}

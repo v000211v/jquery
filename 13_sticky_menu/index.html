@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <title>jQuery | sticky menu</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>sticky menu</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aperiam dolor placeat illo neque pariatur quis hic officia doloremque. Natus ipsa eius deserunt explicabo nobis saepe
+          tenetur dicta laborum nemo.
+        </p>
+
+        <nav id="nav">
+          <ul class="gnb">
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+            <li>menu6</li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae incidunt maiores porro itaque magni! Vel corporis quis odio? Aliquam nihil consequuntur quod ut suscipit nulla nesciunt
+          omnis quasi quam laboriosam excepturi, modi inventore animi quo tempore a eos eius culpa, doloremque cumque ea, nostrum blanditiis! Mollitia minima nam quibusdam necessitatibus non quod,
+          repudiandae nostrum sunt perspiciatis ducimus voluptatibus corrupti excepturi distinctio dicta sapiente adipisci incidunt sed rem. Totam quod animi qui obcaecati cum minus porro laudantium
+          illum vero ratione sapiente ducimus repellat, quidem fugiat sequi recusandae deserunt ut nobis nesciunt harum rerum iste quasi nemo. Distinctio porro ratione minus voluptate! Doloribus ipsa
+          rerum, corporis vitae quae quibusdam, nemo reprehenderit reiciendis sit, repudiandae porro. Et facilis ex iusto, esse magni facere non labore iure inventore fugiat in architecto? Eius
+          necessitatibus laborum esse ea natus repellat corporis impedit libero eveniet, maiores non eum quia fugiat, iusto vitae quod, hic sapiente dolores. Necessitatibus fugit magni eos nisi iusto
+          sapiente. Voluptas labore eveniet alias, deleniti architecto provident pariatur animi ad. Deleniti, reiciendis culpa possimus totam fuga exercitationem? Sed aliquid itaque quia tempora natus
+          quos laborum maxime impedit. Optio quod autem natus dolor? Natus odit consequatur ullam ipsa maxime, explicabo harum. Dolorem quas non odio accusantium aspernatur ab rerum voluptatem! Totam
+          repellat deserunt doloremque itaque aliquid exercitationem, debitis autem veritatis doloribus non alias in voluptates natus assumenda id incidunt quis ab dignissimos qui numquam eveniet,
+          aperiam atque. Delectus perspiciatis mollitia voluptatum atque, voluptate ratione, ab deserunt velit sit, explicabo minus deleniti quibusdam! Quam iusto eum vero cupiditate, facere placeat
+          alias ut, corrupti quibusdam sapiente animi id natus. Labore esse amet in, sed corrupti voluptates maxime voluptatum fuga? Dicta, quisquam numquam! Quo deserunt praesentium, exercitationem
+          magni amet fuga quibusdam unde mollitia saepe. Fugiat incidunt recusandae iusto in laborum possimus quam, doloremque, ipsum velit totam mollitia maiores beatae suscipit facilis officia fugit
+          saepe quaerat, tenetur praesentium facere voluptate consequuntur. Recusandae quas quaerat quibusdam earum minima optio in minus repellat adipisci culpa. Dolore sed quidem fuga, asperiores
+          explicabo eum consectetur dolorem id adipisci iste, minima quas? Sequi maxime ut quos dignissimos mollitia veritatis fugiat natus suscipit nulla inventore vitae in sit nisi, expedita
+          explicabo culpa doloribus omnis officiis! Harum dicta fugit error at tenetur distinctio, hic recusandae saepe excepturi omnis commodi officia delectus sunt, id, quibusdam vitae dignissimos
+          cum. Ad rerum odio officiis quasi eligendi! Qui consequatur illo repellat voluptatem voluptas asperiores alias, cum, rerum dolorum magni reprehenderit sapiente doloribus? Porro molestias
+          rerum provident sequi molestiae? Consequuntur laborum aliquid necessitatibus soluta non, quidem vitae voluptatum, voluptates dolores atque maxime praesentium consequatur tempore placeat eius
+          blanditiis culpa? Similique cum vel molestias et quas distinctio illo, aperiam temporibus at corporis debitis officia inventore iure? Quasi debitis ipsa recusandae quia distinctio vel,
+          aspernatur culpa quae, omnis accusamus consectetur placeat quibusdam voluptatum quam odit libero vero aut facere cupiditate asperiores quos velit totam voluptas? Eius maxime qui, quod magnam
+          debitis perferendis architecto dolorum harum ut asperiores vero voluptatibus doloremque nam cupiditate non? Minus ut repudiandae aliquid exercitationem, accusantium ad. Perspiciatis, sed
+          nobis?
+        </p>
+      </main>
+    </div>
+
+    <script>
+      var nav = $('#nav')
+      var navOffsetValue = nav.offset().top
+
+      $(window).scroll(function () {
+        var scrollTopValue = $(document).scrollTop()
+
+        if (scrollTopValue > navOffsetValue) {
+          nav.addClass('fixed')
+        } else {
+          nav.removeClass('fixed')
+        }
+      })
+    </script>
+  </body>
+</html>

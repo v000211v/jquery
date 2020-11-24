@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>jQuery | slick_slide</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="#" class="logo">로고</a>
+      <ul class="nav">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">서비스</a></li>
+        <li><a href="#">포트폴리오</a></li>
+        <li><a href="#">연락하기</a></li>
+      </ul>
+    </div>
+    <div class="slider">
+      <div class="slide">
+        <div class="item item_01"></div>
+        <div class="item item_02"></div>
+        <div class="item item_03"></div>
+      </div>
+
+      <div class="arrow">
+        <span class="prev_btn"><i class="xi-angle-left-thin"></i></span>
+        <span class="next_btn"><i class="xi-angle-right-thin"></i></span>
+      </div>
+
+      <div class="slide_text">
+        <h4>안녕하세요</h4>
+        <div class="line"><i class="xi-sun-o"></i></div>
+        <p class="info">
+          각급 선거관리위원회는 선거인명부의 작성등 선거사무와 국민투표사무에
+          관하여 관계 행정기관에 필요한 지시를 할 수 있다. 사법권은 법관으로
+          구성된 법원에 속한다.
+        </p>
+        <a href="#" class="btn">둘러보기</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>국가에 정당한 보상을 청구할 수 있다.</h2>
+      <p>
+        헌법개정은 국회재적의원 과반수 또는 대통령의 발의로 제안된다. 제2항과
+        제3항의 처분에 대하여는 법원에 제소할 수 없다. 국민의 자유와 권리는
+        헌법에 열거되지 아니한 이유로 경시되지 아니한다.
+      </p>
+      <p>
+        공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여
+        국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의
+        책임은 면제되지 아니한다.
+      </p>
+      <p>
+        누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을
+        고지받지 아니하고는 체포 또는 구속을 당하지 아니한다. 체포 또는 구속을
+        당한 자의 가족등 법률이 정하는 자에게는 그 이유와 일시·장소가 지체없이
+        통지되어야 한다.
+      </p>
+      <p>
+        한 회계연도를 넘어 계속하여 지출할 필요가 있을 때에는 정부는 연한을
+        정하여 계속비로서 국회의 의결을 얻어야 한다. 국가안전보장회의의
+        조직·직무범위 기타 필요한 사항은 법률로 정한다.
+      </p>
+      <p>
+        새로운 회계연도가 개시될 때까지 예산안이 의결되지 못한 때에는 정부는
+        국회에서 예산안이 의결될 때까지 다음의 목적을 위한 경비는 전년도 예산에
+        준하여 집행할 수 있다.
+      </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $('.slide').slick({
+        dots: true,
+        autoplay: true,
+        speed: 600,
+        autoplaySpeed: 5000,
+        prevArrow: $('.prev_btn'),
+        nextArrow: $('.next_btn')
+      })
+    </script>
+  </body>
+</html>

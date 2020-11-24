@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #666;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.accordion {
+  color: #eee;
+}
+
+h2 {
+  background: #333;
+  padding: 16px;
+  margin: 4px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  top: 26px;
+  right: 16px;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  transform: rotate(-45deg);
+  transition: all 0.2s;
+}
+
+h2.active::after {
+  transform: rotate(45deg);
+}
+
+h1 {
+  color: #ddd;
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.content {
+  background: #333;
+  padding: 1rem;
+  display: none;
+}
